@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background: beige;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.todo-container {
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 450px;
+  text-align: center;
+}
+
+h2 {
+  font-style: sans-serif;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.input-group button {
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.input-group button:hover {
+  background: darkblue;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid gray;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+.todo-list li span {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.todo-list li button {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.todo-list li button:hover {
+  background: darkred;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: white;
+}
+
+.footer button {
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background: darkgreen;
+}
